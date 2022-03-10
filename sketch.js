@@ -41,6 +41,8 @@ function draw(){
 }
 
 async function getBackgroundImg(){
+    backgroundImg = loadImage(bg);
+}
 
     // write code to fetch time from API
     var response= fetch("http://worldtimeapi.org/api/timezone/Asia/Tokyo")
@@ -65,5 +67,4 @@ async function getBackgroundImg(){
         bg="sunset.png"
     }
     
-    backgroundImg = loadImage(bg);
-}
+    
